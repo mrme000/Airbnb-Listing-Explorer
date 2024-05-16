@@ -138,7 +138,7 @@ for doc in documents:
 # st.write(documents)
 
 #Create vector indexes and store in Qdrant. To be run only once in the beginning
-# index = VectorStoreIndex.from_documents(documents, vector_store=vector_store, service_context=service_context, storage_context=storage_context, show_progress=True)
+index = VectorStoreIndex.from_documents(documents, vector_store=vector_store, service_context=service_context, storage_context=storage_context, show_progress=True)
 
 # Load the vector index from Qdrant collection
 index = VectorStoreIndex.from_vector_store(
